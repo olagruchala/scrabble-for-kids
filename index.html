@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Scrabble dla dzieci</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+    <script src="lib/jquery-3.3.1.js"></script>
+    <script src="js/script.js" async></script>
+
+</head>
+<body>
+<div id="container">
+    <h1>Zagraj w słówka!</h1>
+    <form autocomplete="off" id="joke-form">
+        <label>
+            <p>Odszyfruj literki do postaci słowa</p>
+            <span class="scrambled">KEOTK</span>
+            <br>
+            <input id="myInput" type="text" size="10">
+        </label>
+        <button type="submit">Sprawdź</button>
+    </form>
+    <div id="checking" class="divAnswer">Jak myślisz?</div>
+    <button id="nextWordButton" class="hidden">Następne słowo</button>
+</div>
+
+</body>
+</html>
