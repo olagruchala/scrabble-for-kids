@@ -7,10 +7,18 @@
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
     <script src="lib/jquery-3.3.1.js"></script>
     <script src="js/script.js" async></script>
-
+    <script src="js/wordsPL.js" async></script>
+    <script src="js/wordsEN.js" async></script>
 </head>
+
 <body>
 <div id="container">
+    <div id="langChanger">
+        <span id="lang1">A może angielskie słówka?</span>
+        <img src="css/img/ukflag.png" alt="Flaga Wielkiej Brytanii" class="flag visible" id="flagEN">
+        <img src="css/img/plflag.png" alt="Flaga Polski" class="flag flagHidden" id="flagPL">
+    </div>
+
     <h1>Zagraj w słówka!</h1>
     <form autocomplete="off" id="joke-form">
         <label>
@@ -23,6 +31,7 @@
     </form>
     <div id="checking" class="divAnswer">Jak myślisz?</div>
     <button id="nextWordButton" class="hidden">Następne słowo</button>
+
 </div>
 
 </body>

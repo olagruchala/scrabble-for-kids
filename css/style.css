@@ -13,6 +13,16 @@ body {
     text-align: center;
 }
 
+#langChanger {
+    margin-top: -8%;
+    margin-left: 72%;
+    padding-left: 145px;
+}
+
+.flag {
+    height: 50px;
+}
+
 form {
     font-size: 1.5em;
     margin-bottom: 3%;
@@ -49,6 +59,11 @@ button {
 input {
     background-color: #F0FAF0;
     color: #086D7C;
+}
+
+.flagHidden{
+    visibility: hidden;
+    display: none;
 }
 
 .hidden {
