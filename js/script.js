@@ -8,27 +8,10 @@ $(document).ready(function() {
     let words = wordsPL;
 
 
-    // obsługa zmiany flagi z PL na EN (ustawiam język PL w grze)
-    $("#flagPL").on("click", function() {
-
-        $("#myInput").focus();
-        wordsIndexEN = wordsIndex;
-        wordsIndex = wordsIndexPL;
-        words = wordsPL;
-
-        let innerWord = words[wordsIndex];
-        $(".scrambled").html(innerWord.scrable);
-
-        $("#flagPL").removeClass("visible")
-            .addClass("flagHidden");
-        $("#flagEN").removeClass("flagHidden")
-            .addClass("visible");
-        $("#lang1").text("A może angielskie słówka?")
-    });
-
     // obsługa zmiany flagi z EN na PL (ustawiam język EN w grze)
     $("#flagEN").on("click", function() {
 
+        $("#joke-form")[0].reset();
         $("#myInput").focus();
         wordsIndexPL = wordsIndex;
         wordsIndex = wordsIndexEN;
@@ -37,13 +20,30 @@ $(document).ready(function() {
         let innerWord = words[wordsIndex];
         $(".scrambled").html(innerWord.scrable);
 
-        $("#flagEN").removeClass("visible")
-            .addClass("flagHidden");
-        $("#flagPL").removeClass("flagHidden")
-            .addClass("visible");
+        $("#flagEN").toggleClass("visible flagHidden");
+        $("#flagPL").toggleClass("visible flagHidden");
         $("#lang1").text("Jeszcze raz polskie?");
-
     });
+
+
+    // obsługa zmiany flagi z PL na EN (ustawiam język PL w grze)
+    $("#flagPL").on("click", function() {
+
+        $("#joke-form")[0].reset();
+        $("#myInput").focus();
+        wordsIndexEN = wordsIndex;
+        wordsIndex = wordsIndexPL;
+        words = wordsPL;
+
+        let innerWord = words[wordsIndex];
+        $(".scrambled").html(innerWord.scrable);
+
+        $("#flagPL").toggleClass("visible flagHidden");
+        $("#flagEN").toggleClass("visible flagHidden");
+        $("#lang1").text("A może angielskie słówka?")
+    });
+
+
 
     //obsługa przycisku "Sprawdź"
     $("#joke-form").on("submit", function (event) {
@@ -86,15 +86,15 @@ $(document).ready(function() {
         $("#checking").removeClass("visible").addClass("hidden");
     });
 
+    //obsługa przycisku "Zacznij od początku"
+    $("#clearButton").on("click", function () {
+        $("#joke-form")[0].reset();
+        $("#myInput").focus();
+        wordsIndex = 0;
+        let innerWord = words[wordsIndex];
+        $(".scrambled").html(innerWord.scrable);
+    })
+
 });
 
-
-
-
-
-
-// function getCurrentLang() {
-//     //localStorage.setItem("chosenLang", "en");
-//     return localStorage.getItem("chosenLang");
-// }
 

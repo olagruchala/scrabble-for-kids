@@ -45,7 +45,23 @@ let wordsPL = [
         scrable: "PALAŻ"
     },
     {
-        correct: "PARASOL",
-        scrable: "PLORASA"
+        correct: "LATO",
+        scrable: "LOTA"
+    },
+    {
+        correct: "BALKON",
+        scrable: "BONALK"
+    },
+    {
+        correct: "SŁOŃCE",
+        scrable: "SECŁŃO"
+    },
+    {
+        correct: "ZIELEŃ",
+        scrable: "ZŃELIE"
+    },
+    {
+        correct: "WODA",
+        scrable: "WDAO"
     }
 ];

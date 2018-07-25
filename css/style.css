@@ -56,6 +56,17 @@ button {
     margin-top: 2%;
 }
 
+#clearButton {
+    margin-left: 88%;
+    margin-top: 0;
+    font-size: 1em;
+    height: 110px;
+    width: 110px;
+    border-radius: 150px;
+    padding: 20px;
+    text-align: center;
+}
+
 input {
     background-color: #F0FAF0;
     color: #086D7C;
