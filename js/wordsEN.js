@@ -1,6 +1,4 @@
-
-let wordsEN = [
-    {
+let wordsEN = [{
         correct: "CAT",
         scrable: "CTA"
     },
@@ -47,5 +45,68 @@ let wordsEN = [
     {
         correct: "WHITE",
         scrable: "WTEHI"
+    },
+    {
+        correct: "UNIVERSE",
+        scrable: "UENVISRE"
+    },
+    {
+        correct: "KNIFE",
+        scrable: "KIFNE"
+    },
+    {
+        correct: "FORK",
+        scrable: "FROK"
+    },
+    {
+        correct: "PUMPKIN",
+        scrable: "PPMUIKN"
+    },
+    {
+        correct: "WINDOW",
+        scrable: "WDONIW"
+    },
+    {
+        correct: "DOOR",
+        scrable: "DORO"
+    }, {
+        correct: "DAY",
+        scrable: "DYA"
+    },
+    {
+        correct: "NIGHT",
+        scrable: "NGHIT"
+    },
+    {
+        correct: "ROCKET",
+        scrable: "RCKOET"
+    },
+    {
+        correct: "MIRROR",
+        scrable: "MORIRR"
+    },
+    {
+        correct: "GLASS",
+        scrable: "GSALS"
+    },
+    {
+        correct: "SPEAKER",
+        scrable: "SKEAPER"
+    },
+    {
+        correct: "FILM",
+        scrable: "FLIM"
+    },
+    {
+        correct: "CARTOON",
+        scrable: "COTORAN"
+    },
+    {
+        correct: "WITCH",
+        scrable: "WCITH"
+    },
+    {
+        correct: "CLOUD",
+        scrable: "CUOLD"
     }
 ];
